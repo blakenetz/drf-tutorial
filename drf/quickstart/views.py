@@ -19,6 +19,4 @@ class GroupViewSet(viewsets.ModelViewSet):
     """
     queryset = Group.objects.all().order_by('name')
     serializer_class = GroupSerializer
-    permission_classes = [permissions.IsAuthenticated]from django.shortcuts import render
-
-# Create your views here.
+    permission_classes = [permissions.IsAuthenticated]
